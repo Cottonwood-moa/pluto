@@ -18,6 +18,7 @@ export default function useKeyPress(targetKey: string): boolean {
       window.removeEventListener("keydown", downHandler);
       window.removeEventListener("keyup", upHandler);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return keyPressed;
 }
